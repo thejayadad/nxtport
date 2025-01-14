@@ -1,3 +1,4 @@
+import ExperienceSection from '@/components/frontend/experience/experience';
 import HeroSection from '@/components/frontend/hero/hero';
 import AboutSection from '@/components/frontend/section/section';
 import React from 'react';
@@ -40,6 +41,32 @@ const App: React.FC = () => {
       textColor="#374151"
         withAnimation={true}
   animationDirection="down"
+    />
+   <ExperienceSection
+      title="My Experience"
+      titleColor="#1e293b"
+      backgroundColor="#fff"
+      textColor="#374151"
+      experiences={[
+        {
+          title: 'Frontend Developer',
+          company: 'TechCorp',
+          description: 'Built and optimized scalable UI components using React and Tailwind CSS.',
+          duration: 'Jan 2020 - Dec 2022',
+        },
+        {
+          title: 'Backend Developer',
+          company: 'DevSolutions',
+          description: 'Developed REST APIs and microservices using Node.js and Express.',
+          duration: 'Jan 2018 - Dec 2019',
+        },
+        {
+          title: 'Fullstack Intern',
+          company: 'StartupHub',
+          description: 'Contributed to the development of a web application using the MERN stack.',
+          duration: 'Jun 2017 - Dec 2017',
+        },
+      ]}
     />
     </div>
 
