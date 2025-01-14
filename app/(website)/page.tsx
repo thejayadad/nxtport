@@ -38,6 +38,8 @@ const App: React.FC = () => {
       titleColor="#1e293b"
       backgroundColor="#f3f4f6"
       textColor="#374151"
+        withAnimation={true}
+  animationDirection="down"
     />
     </div>
 
