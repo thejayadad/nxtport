@@ -1,0 +1,53 @@
+/* Shared Styles */
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    background: linear-gradient(to right, #4B5563, #9CA3AF); /* Minimalist gray gradient */
+    width: 2.5rem; /* 10 Tailwind units */
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.iconText {
+    color: #F3F4F6; /* Soft white for better contrast */
+    font-size: 1.25rem; /* 5 Tailwind units */
+    font-weight: bold;
+}
+
+.websiteName {
+    font-size: 1.5rem; /* 6 Tailwind units */
+    font-weight: 800;
+    background: linear-gradient(to right, #4B5563, #9CA3AF); /* Same as the icon gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Shape Variants */
+.rounded {
+    border-radius: 9999px; /* Full circle */
+}
+
+.square {
+    border-radius: 0; /* No rounding */
+}
+
+.rectangle {
+    border-radius: 0;
+    width: 4rem; /* Wider than tall */
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 1.25rem solid transparent;
+    border-right: 1.25rem solid transparent;
+    border-bottom: 2.5rem solid #4B5563; /* Minimalist gray for triangle */
+    background: none;
+}
