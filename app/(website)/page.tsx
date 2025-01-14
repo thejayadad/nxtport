@@ -1,3 +1,4 @@
+import ContactSection from '@/components/frontend/contact/contact-section';
 import ExperienceSection from '@/components/frontend/experience/experience';
 import HeroSection from '@/components/frontend/hero/hero';
 import ProjectSection from '@/components/frontend/project-section/project-section';
@@ -106,6 +107,27 @@ const App: React.FC = () => {
       githubLink: 'https://github.com/username/blog',
     },
   ]}
+/>
+<ContactSection
+  title="Get in Touch"
+  description="Feel free to reach out for collaborations or just a friendly chat."
+  titleColor="#1e293b"
+  descriptionColor="#374151"
+  backgroundColor="#fff"
+  textColor="#374151"
+  buttonLabel="Send"
+  buttonColor="#2563eb"
+  buttonTextColor="#ffffff"
+  fields={[
+    { label: 'Name', type: 'text', placeholder: 'Enter your name' },
+    { label: 'Email', type: 'email', placeholder: 'Enter your email' },
+    { label: 'Message', type: 'textarea', placeholder: 'Write your message here' },
+  ]}
+  animation={{
+    direction: 'up',
+    duration: 1,
+    delay: 0.1,
+  }}
 />
 
 </div>
