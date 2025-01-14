@@ -41,7 +41,8 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
 
   return (
     <div
-      className={`w-full py-16 px-6 ${className}`}
+    id='experience'
+      className={`w-full  py-16 px-6 ${className}`}
       style={{ backgroundColor }}
     >
       <div className="max-w-screen-lg mx-auto">

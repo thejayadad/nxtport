@@ -10,6 +10,14 @@ const MobileMenu: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = (id: string) => {
+    const section = document.querySelector(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsOpen(false); // Close the menu after navigating
+  };
+
   return (
     <div className="relative">
       {/* Menu Toggle Button */}
@@ -34,15 +42,30 @@ const MobileMenu: React.FC = () => {
 
         {/* Links Section */}
         <nav className="p-4 space-y-4 text-lg font-semibold">
-          <a href="#about" className="block hover:text-gray-500">
+          <button
+            onClick={() => handleLinkClick('#about')}
+            className="block w-full text-left hover:text-gray-500"
+          >
             About
-          </a>
-          <a href="#projects" className="block hover:text-gray-500">
+          </button>
+          <button
+            onClick={() => handleLinkClick('#experience')}
+            className="block w-full text-left hover:text-gray-500"
+          >
+            Experience
+          </button>
+          <button
+            onClick={() => handleLinkClick('#projects')}
+            className="block w-full text-left hover:text-gray-500"
+          >
             Projects
-          </a>
-          <a href="#contact" className="block hover:text-gray-500">
+          </button>
+          <button
+            onClick={() => handleLinkClick('#contact')}
+            className="block w-full text-left hover:text-gray-500"
+          >
             Contact
-          </a>
+          </button>
         </nav>
 
         {/* Footer Section */}

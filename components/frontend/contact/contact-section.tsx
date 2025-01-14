@@ -63,7 +63,9 @@ const ContactSection: React.FC<ContactSectionProps> = ({
 
   return (
     <motion.div
-      className={`w-full py-16 px-6 ${className}`}
+
+    id='contact'
+      className={`w-full sm:mt-36 py-16 px-6 ${className}`}
       style={{ backgroundColor }}
       initial={{
         opacity: 0,

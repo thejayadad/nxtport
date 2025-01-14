@@ -44,7 +44,9 @@ const AboutSection: React.FC<SectionProps> = ({
   };
 
   return (
-    <div className="w-full">
+    <div
+    id='about'
+    className="w-full h-full">
       <div
         className={`w-full mx-auto max-w-screen-lg py-16 px-6 ${className}`}
         style={{ backgroundColor }}

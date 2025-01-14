@@ -58,7 +58,8 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
 
   return (
     <div
-      className={`w-full py-16 px-6 ${className}`}
+    id='projects'
+      className={`w-full h-[700px] py-16 px-6 ${className}`}
       style={{ backgroundColor }}
     >
       <div className="max-w-screen-lg mx-auto">
