@@ -10,3 +10,12 @@ body,
   width: 100%;
   @apply text-sm;
 }
+
+#editorjs {
+  min-height: 300px;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
